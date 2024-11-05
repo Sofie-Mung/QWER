@@ -1,0 +1,14 @@
+a_list = ['bbc', 'bcd', 'dog', 'abcd', 'tiger', 'lion']
+b_list = []
+for i in range(len(a_list)):
+  for j in range(len(a_list)):
+    sentinel = False
+    if len(a_list[i]) <= len(a_list[j]):
+      sentinel = False
+    else:
+      sentinel = True
+    if sentinel == True:
+      break
+    if a_list[i] not in b_list:
+      b_list.append(a_list[i])
+print(b_list)
