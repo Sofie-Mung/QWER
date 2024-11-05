@@ -19,3 +19,4 @@ with open('hello python.txt', 'w+') as t:
         t.write('{}\n'.format(a_list[i] * 10))
     t.seek(0)
     print(t.read())
+a
