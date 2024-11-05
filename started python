@@ -1,3 +1,20 @@
+class BankAccount:
+  def __init__(self, name, accountnum, balance):
+    self.__name = name
+    self.__account_num = str(accountnum)
+    self.__balance = int(balance)
+
+  def deposit(self, money):
+    return self.__balance + money
+
+  def __str__(self):
+    return self.__name + ' ' + self.__account_num + ' ' + str(self.__balance)
+
+c1 = BankAccount('Uk', '1234-5678', 12012)
+print(c1)
+print(c1.deposit(100))
+
+
 g = open('hello python.txt', 'w+')
 for i in range(1, 11):
   if i == 10:
